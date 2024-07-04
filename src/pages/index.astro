@@ -1,16 +1,63 @@
 ---
-
+import '@fontsource-variable/outfit'
+import carousel1 from '@assets/carousel/traenki.jpg'
+import carousel2 from '@assets/carousel/traenki_2.jpg'
+import carousel3 from '@assets/carousel/traenki_street_food.jpg'
+import carousel4 from '@assets/carousel/traenki_opening.jpg'
+import carousel5 from '@assets/carousel/drinks.jpg'
+import logo from '@assets/logo.png'
+import SwappingText from '@components/SwappingText.astro'
 ---
 
-<html lang="en">
+<!doctype html>
+<html lang="de-ch" class="h-full">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Tränki</title>
   </head>
-  <body class="font-sans">
-    <h1 class="mt-40 text-center text-xl text-traenki-dark">Tränki</h1>
+  <body class="h-full font-sans text-traenki-dark antialiased">
+    <main class="flex h-full flex-col justify-between">
+      <div class="mx-auto w-full max-w-7xl pt-6">
+        <div class="mx-5 max-w-[737px]">
+          <img src={logo.src} alt="Tränki" width="112" height="72" />
+          <h1
+            class="mt-12 text-[40px] font-semibold leading-[44px] md:mt-16 md:text-[64px] md:leading-[70px]"
+            >Üsi Tränki macht dini Party <span
+              class="relative inline-block h-full align-top"
+            >
+              <SwappingText index={0}>einzigartig.</SwappingText><SwappingText
+                index={1}>unkompliziert.</SwappingText
+              ><SwappingText index={2}>entspannt.</SwappingText><SwappingText
+                index={3}>bsundrigs.</SwappingText
+              ><SwappingText index={4}>bizli fancy.</SwappingText><SwappingText
+                index={5}>mega-toll.</SwappingText
+              ></span
+            ></h1
+          >
+          <p class="mt-6 md:text-xl"
+            >Wir freuen uns immer, wenn es etwas zu feiern gibt. Egal ob
+            Geburtstagsparty, Firmenanlass oder Streetfood Festival: Unsere
+            Tränki macht Stimmung und zaubert feine Drinks für alle.</p
+          >
+          <a
+            href="mailto:mail@traenki.ch"
+            class="mt-8 inline-block rounded-full bg-traenki-shade px-6 py-2 font-semibold"
+            >Jetzt kontaktieren</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex h-[287px] snap-x space-x-6 overflow-x-auto pb-6 scrollbar-thin md:h-[452px]"
+      >
+        <img src={carousel1.src} class="h-full rounded-r object-cover shadow" />
+        <img src={carousel2.src} class="h-full rounded object-cover shadow" />
+        <img src={carousel3.src} class="h-full rounded object-cover shadow" />
+        <img src={carousel4.src} class="h-full rounded object-cover shadow" />
+        <img src={carousel5.src} class="h-full rounded-l object-cover shadow" />
+      </div>
+    </main>
   </body>
 </html>

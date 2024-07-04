@@ -1,0 +1,14 @@
+---
+interface Props {
+  index: number
+}
+
+const { index } = Astro.props
+---
+
+<span
+  class="absolute top-0 inline-block animate-swap whitespace-nowrap align-bottom opacity-0"
+  style={{
+    'animation-delay': `${(12 / 6) * index}s`,
+  }}><slot /></span
+>
