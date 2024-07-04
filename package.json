@@ -1,0 +1,40 @@
+{
+  "name": "traenki",
+  "private": true,
+  "description": "traenki.ch website",
+  "homepage": "https://traenki.ch",
+  "license": "MIT",
+  "author": {
+    "name": "Jasmin Noetzli",
+    "email": "code@jasi.dev",
+    "url": "https://github.com/GiyoMoon"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev",
+    "lint": "eslint --max-warnings=0 .",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/solid-js": "^4.4.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/outfit": "^5.0.13",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "astro": "^4.11.5",
+    "astro-eslint-parser": "^1.0.2",
+    "clsx": "^2.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-astro": "^1.2.2",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-solid": "^0.14.1",
+    "eslint-plugin-tailwindcss": "^3.17.4",
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0",
+    "sharp": "^0.33.4",
+    "solid-js": "^1.8.18",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3"
+  }
+}
